@@ -1,0 +1,80 @@
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.intelligrated.download">
+
+    <class name="Eporder" table="eporder">
+        <id name="id" type="biginteger" column="id">
+            <generator class="identity" />
+        </id>
+        
+        <property name="orderSequence" type="integer">
+            <column name="order_seq"/>
+        </property>
+        
+        <property name="comment1" type="string">
+            <column name="comment_1" length="50" />
+        </property>
+        
+        <property name="comment2" type="string">
+            <column name="comment_2" length="50" />
+        </property>
+        
+        <property name="dlBatch" type="string">
+            <column name="dl_batch" length="10" />
+        </property>
+        
+        <property name="cOrderNumber" type="string">
+            <column name="c_order_nbr" length="20" />
+        </property>
+
+		<property name="miscField1" type="string">
+            <column name="misc_field_1" length="20" />
+        </property>
+
+		<property name="comment3" type="string">
+            <column name="comment_3" length="50" />
+        </property>
+        
+        <property name="comment4" type="string">
+            <column name="comment_4" length="50" />
+        </property>
+
+		<property name="comment5" type="string">
+            <column name="comment_5" length="50" />
+        </property>
+        
+        <property name="comment6" type="string">
+            <column name="comment_6" length="50" />
+        </property>
+
+		<property name="comment8" type="string">
+            <column name="comment_8" length="50" />
+        </property>
+
+		<property name="orderNumber" type="string">
+            <column name="order_nbr" length="20" />
+        </property>
+
+		<property name="cartonId" type="string">
+            <column name="carton_id" length="20" />
+        </property>
+	
+		<property name="miscInt1" type="integer">
+            <column name="misc_int1"/>
+        </property>
+
+		<property name="miscField2" type="string">
+            <column name="misc_field_2" length="20" />
+        </property>
+
+		<property name="miscField3" type="string">
+            <column name="misc_field_3" length="20" />
+        </property>
+        
+        <property name="comment9" type="string">
+            <column name="comment_9" length="20" />
+        </property>
+
+    </class>
+</hibernate-mapping>
