@@ -4,7 +4,7 @@ PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 <hibernate-mapping package="com.intelligrated.download">
 
     <class name="Eporder" table="eporder">
-        <id name="id" type="biginteger" column="id">
+        <id name="id" type="long" column="id"><!-- java Long, ANSI SQL BIGINT -->
             <generator class="identity" />
         </id>
         
